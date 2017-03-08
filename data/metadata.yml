@@ -1,0 +1,92 @@
+name: ring
+binary: ring
+packages:
+  - libpulse-dev
+  - libsamplerate0-dev
+  - libgsm1-dev
+  - libspeex-dev
+  - libtool
+  - libdbus-1-dev
+  - libasound2-dev
+  - libopus-dev
+  - libspeexdsp-dev
+  - libexpat1-dev
+  - libpcre3-dev
+  - libyaml-cpp-dev
+  - libboost-dev
+  - libdbus-c++-dev
+  - libsndfile1-dev
+  - libsrtp-dev
+  - libjack-dev
+  - libupnp-dev
+  - libudev-dev
+  - yasm
+  - uuid-dev
+  - libgnutls-dev
+  - libjsoncpp-dev
+frameworks:
+  build_kf5: false
+  frameworks:
+    - extra-cmake-modules
+    - kcoreaddons
+    - ki18n
+    - kitemviews
+    - kconfig
+    - polkit-qt-1
+    - kauth
+    - kcodecs
+    - karchive
+    - kdoctools
+    - kguiaddons
+    - kwidgetsaddons
+    - kconfigwidgets
+    - kiconthemes
+    - kcompletion
+    - kwindowsystem
+    - kcrash
+    - kdbusaddons
+    - kservice
+    - sonnet
+    - ktextwidgets
+    - kglobalaccel
+    - attica
+    - kxmlgui
+    - solid
+    - kbookmarks
+    - kjobwidgets
+    - phonon
+    - phonon-gstreamer
+    - knotifications
+    - gpgmepp
+    - kwallet
+    - kio
+    - knewstuff
+    - breeze-icons
+    - kactivities
+    - kpackage
+    - kdeclarative
+    - kwayland
+    - plasma-framework
+    - kdecoration
+    - breeze
+type: git
+url: https://gerrit-ring.savoirfairelinux.com/ring-daemon
+buildsystem: custom
+buildoptions: /bin/bash /in/scripts/ring.sh
+dependencies:
+  - cpan:
+      build:
+        buildsystem: custom
+        buildoptions: cpan URI::Escape
+      depname: cpan
+      source:
+        type: none
+        url: ''
+  - ffmpeg:
+      build:
+        buildsystem: custom
+        buildoptions: /bin/bash /in/scripts/ffmpeg.sh
+      depname: ffmepg
+      source:
+        type: none
+        url: ''
