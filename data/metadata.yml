@@ -100,6 +100,15 @@ dependencies:
         type: git
         url: https://anonscm.debian.org/git/pkg-multimedia/x264.git
         branch: master
+  - x265:
+      build:
+        buildsystem: make
+        buildoptions: '--enable-static --enable-shared'
+      depname: x265
+      source:
+        type: git
+        url: https://anonscm.debian.org/git/pkg-multimedia/x265.git
+        branch: master
   - ffmpeg:
       build:
         buildsystem: custom
