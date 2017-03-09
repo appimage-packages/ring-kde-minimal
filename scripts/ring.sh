@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 set -x
-RING=$PWD/ring-daemon
-cd $RING/contrib
+
+cd contrib
 
 mkdir build
 cd build
