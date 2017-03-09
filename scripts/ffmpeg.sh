@@ -2,9 +2,8 @@
 set -x
 wget http://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2
 tar xjvf ffmpeg-snapshot.tar.bz2
-
-if cd ffmpeg \
- ./configure \
+cd ffmpeg \
+if ./configure \
   --prefix="/opt/usr" \
   --progs-suffix=mlt \
   --build-suffix=mlt \
