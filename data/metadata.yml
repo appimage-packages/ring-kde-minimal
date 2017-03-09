@@ -90,6 +90,7 @@ dependencies:
       source:
         type: git
         url: https://anonscm.debian.org/git/pkg-multimedia/libvpx.git
+        branch: master
   - ffmpeg:
       build:
         buildsystem: custom
