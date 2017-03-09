@@ -11,6 +11,8 @@ function error_exit
 if wget http://ftp.videolan.org/pub/videolan/x265/x265_2.3.tar.gz; then
 	tar xvf x265_2.3.tar.gz
 else
+	error_exit "$LINENO: An error has occurred.. Aborting."
+fi
 
 if cd x265_2.3/build/linux; then
 	  cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="/opt/usr" -DENABLE_PIC=ON -DENABLE_SHARED=OFF ../../source
