@@ -82,6 +82,14 @@ dependencies:
       source:
         type: none
         url: ''
+  - libvpx:
+      build:
+        buildsystem: make
+        buildoptions: '--enable-static --enable-shared'
+      depname: libvpx
+      source:
+        type: git
+        url: 'https://anonscm.debian.org/git/pkg-multimedia/libvpx.git'
   - ffmpeg:
       build:
         buildsystem: custom
