@@ -7,6 +7,7 @@ cd contrib
 mkdir build
 cd build
 if ../bootstrap; then
+make dep
 make
 # That's all !
 else
