@@ -88,8 +88,8 @@ dependencies:
         buildoptions: '--enable-static --enable-shared'
       depname: libvpx
       source:
-        type: git
-        url: https://anonscm.debian.org/git/pkg-multimedia/libvpx.git
+        type: bz2
+        url: http://storage.googleapis.com/downloads.webmproject.org/releases/webm/libvpx-1.6.1.tar.bz2
         branch: master
   - x264:
       build:
