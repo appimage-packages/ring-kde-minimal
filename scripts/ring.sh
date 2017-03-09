@@ -4,6 +4,7 @@ set -x
 
 cd contrib
 
+rm -rfv build 
 mkdir build
 cd build
 if ../bootstrap; then
