@@ -104,8 +104,8 @@ dependencies:
         buildsystem: custom
         buildoptions: /bin/bash /in/scripts/x265.sh
       source:
-        type: gz
-        url: http://ftp.videolan.org/pub/videolan/x265/x265_2.3.tar.gz
+        type: none
+        url: ''
   - ffmpeg:
       build:
         buildsystem: custom
