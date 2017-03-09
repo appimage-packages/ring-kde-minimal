@@ -89,7 +89,7 @@ dependencies:
       depname: libvpx
       source:
         type: git
-        url: 'https://anonscm.debian.org/git/pkg-multimedia/libvpx.git'
+        url: https://anonscm.debian.org/git/pkg-multimedia/libvpx.git
   - ffmpeg:
       build:
         buildsystem: custom
