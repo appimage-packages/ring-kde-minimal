@@ -102,8 +102,8 @@ dependencies:
         branch: master
   - x265:
       build:
-        buildsystem: make
-        buildoptions: '--enable-static --enable-shared'
+        buildsystem: custom
+        buildoptions: 'cd x265/build/linux && cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="/opt/usr" -DENABLE_PIC=ON -DENABLE_SHARED=OFF ../../source'
       depname: x265
       source:
         type: git
