@@ -86,7 +86,7 @@ dependencies:
       build:
         buildsystem: make
         buildoptions: '--enable-static --enable-shared'
-      depname: libvpx
+      depname: libvpx-1.6.1
       source:
         type: bz2
         url: http://storage.googleapis.com/downloads.webmproject.org/releases/webm/libvpx-1.6.1.tar.bz2
