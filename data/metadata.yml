@@ -94,7 +94,7 @@ dependencies:
   - x264:
       build:
         buildsystem: custom
-        buildoptions: /bin/bash scripts/x264.sh
+        buildoptions: /bin/bash /in/scripts/x264.sh
       depname: last_x264
       source:
         type: none
@@ -102,7 +102,7 @@ dependencies:
   - x265:
       build:
         buildsystem: custom
-        buildoptions: /bin/bash scripts/x265.sh
+        buildoptions: /bin/bash /in/scripts/x265.sh
       source:
         type: gz
         url: http://ftp.videolan.org/pub/videolan/x265/x265_2.3.tar.gz
