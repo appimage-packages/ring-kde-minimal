@@ -103,7 +103,7 @@ dependencies:
   - x265:
       build:
         buildsystem: custom
-        buildoptions: 'cd build/linux && cmake -G \"Unix Makefiles\" -DCMAKE_INSTALL_PREFIX="/opt/usr" -DENABLE_PIC=ON -DENABLE_SHARED=OFF ../../source'
+        buildoptions: 'cd build/linux && cmake -G \"Unix\ Makefiles\" -DCMAKE_INSTALL_PREFIX="/opt/usr" -DENABLE_PIC=ON -DENABLE_SHARED=OFF ../../source'
       depname: x265
       source:
         type: git
