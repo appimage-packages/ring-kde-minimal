@@ -26,7 +26,8 @@ if ./configure \
   --enable-libopencore-amrnb \
   --enable-libopencore-amrwb \
   --enable-version3 \
-  --enable-libvpx; then
+  --enable-libvpx
+then
 	make -j4
   make install
 else
