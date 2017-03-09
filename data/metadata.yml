@@ -91,6 +91,15 @@ dependencies:
         type: git
         url: https://anonscm.debian.org/git/pkg-multimedia/libvpx.git
         branch: master
+  - x264:
+      build:
+        buildsystem: make
+        buildoptions: '--enable-static --enable-shared'
+      depname: x264
+      source:
+        type: git
+        url: https://anonscm.debian.org/git/pkg-multimedia/x264.git
+        branch: master
   - ffmpeg:
       build:
         buildsystem: custom
