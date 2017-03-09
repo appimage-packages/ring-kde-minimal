@@ -95,19 +95,18 @@ dependencies:
       build:
         buildsystem: make
         buildoptions: '--enable-static --enable-shared'
-      depname: x264
+      depname: last_x264
       source:
-        type: git
-        url: https://anonscm.debian.org/git/pkg-multimedia/x264.git
+        type: bz2
+        url: ftp://ftp.videolan.org/pub/x264/snapshots/last_x264.tar.bz2
         branch: master
   - x265:
       build:
         buildsystem: custom
         buildoptions: /bin/bash scripts/x265.sh
-      depname: x265
       source:
-        type: git
-        url: https://anonscm.debian.org/git/pkg-multimedia/x265.git
+        type: gz
+        url: http://ftp.videolan.org/pub/videolan/x265/x265_2.3.tar.gz
         branch: master
   - ffmpeg:
       build:
