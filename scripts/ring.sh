@@ -4,11 +4,11 @@ set -x
 
 cd contrib
 
-rm -rfv build 
+rm -rfv build
 mkdir build
 cd build
-if ../bootstrap; then
-make dep
+if ../bootstrap --disable-pjproject; then
+
 make
 # That's all !
 else
