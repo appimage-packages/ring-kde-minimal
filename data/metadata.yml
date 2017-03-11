@@ -107,11 +107,3 @@ dependencies:
       source:
         type: none
         url: ''
-  - ffmpeg:
-      build:
-        buildsystem: custom
-        buildoptions: /bin/bash /in/scripts/ffmpeg.sh
-      depname: ffmepg
-      source:
-        type: none
-        url: ''
