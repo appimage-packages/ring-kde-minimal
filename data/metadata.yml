@@ -83,23 +83,6 @@ dependencies:
       source:
         type: none
         url: ''
-  - libvpx:
-      build:
-        buildsystem: make
-        buildoptions: '--enable-static --enable-shared'
-      depname: libvpx-1.6.1
-      source:
-        type: bz2
-        url: http://storage.googleapis.com/downloads.webmproject.org/releases/webm/libvpx-1.6.1.tar.bz2
-        branch: master
-  - x264:
-      build:
-        buildsystem: custom
-        buildoptions: /bin/bash /in/scripts/x264.sh
-      depname: last_x264
-      source:
-        type: none
-        url: ''
   - x265:
       build:
         buildsystem: custom
