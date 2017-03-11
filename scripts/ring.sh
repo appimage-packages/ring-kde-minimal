@@ -2,6 +2,7 @@
 set -e
 set -x
 export LD_LIBRARY_PATH=/opt/usr/lib:/opt/usr/lib/x86_64-linux-gnu:/usr/lib:/usr/lib64
+export PKG_CONFIG="pkg-config --static"
 cd contrib
 
 rm -rfv build
