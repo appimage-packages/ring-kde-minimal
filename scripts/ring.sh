@@ -26,7 +26,20 @@ make install
 else
 	error_exit "$LINENO: An error has occurred.. Aborting."
 fi
-
+cd ../../
+LIBRINGLIENT=`pwd`/ring-lrc
+RING=`pwd`/ring-daemon
+git clone https://gerrit-ring.savoirfairelinux.com/ring-daemon
+git clone https://gerrit-ring.savoirfairelinux.com/ring-lrc
+cd $LIBRINGLIENT
+mkdir build
+cd build
+if cmake .. -DRING_BUILD_DIR=$RING/src -DCMAKE_INSTALL_PREFIX=/opt/usr; then
+make -j8
+make install
+else
+	error_exit "$LINENO: An error has occurred.. Aborting."
+fi
 function error_exit
 {
 	echo "$1" 1>&2
