@@ -24,7 +24,6 @@ packages:
   - uuid-dev
   - libgnutls-dev
   - libjsoncpp-dev
-  - libpjproject-dev
   - libva-dev
 frameworks:
   build_kf5: false

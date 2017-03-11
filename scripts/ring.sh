@@ -7,7 +7,7 @@ cd contrib
 rm -rfv build
 mkdir build
 cd build
-if ../bootstrap --disable-pjproject; then
+if ../bootstrap --enable-gnutls; then
 
 make
 # That's all !
