@@ -7,7 +7,7 @@ cd contrib
 rm -rfv build
 mkdir build
 cd build
-if ../bootstrap --enable-gnutls; then
+if ../bootstrap --enable-nettle --enable-gnutls; then
 
 make
 # That's all !
