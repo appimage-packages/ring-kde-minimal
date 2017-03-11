@@ -7,8 +7,8 @@ cd contrib
 rm -rfv build
 mkdir build
 cd build
-if ../bootstrap --enable-nettle --enable-gnutls; then
-make .nettle .gnutls .ffmpeg
+if ../bootstrap --prefix=/opt/usr; then
+make .nettle .gnutls .x264 .ffmpeg
 
 make
 # That's all !
