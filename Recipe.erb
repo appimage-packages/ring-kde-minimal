@@ -71,7 +71,7 @@ cp -rfv /opt/usr/lib/x86_64-linux-gnu/* /opt/usr/lib/
 rm -rfv  /opt/usr/lib/x86_64-linux-gnu
 cp -rfv /opt/usr/lib/* ./lib/
 unset LD_LIBRARY_PATH
-../linuxdeployqt-1-x86_64.AppImage <%= name %> -verbose=3 -bundle-non-qt-libs -qmldir=/opt/usr/qml
+#../linuxdeployqt-1-x86_64.AppImage <%= name %> -verbose=3 -bundle-non-qt-libs -qmldir=/opt/usr/qml
 
 patch_usr
 glibc_needed
