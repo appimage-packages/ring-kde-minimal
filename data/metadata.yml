@@ -1,5 +1,5 @@
 name: ring
-binary: ring-kde
+binary: ring
 packages:
   - libpulse-dev
   - libsamplerate0-dev
