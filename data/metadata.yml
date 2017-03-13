@@ -1,5 +1,5 @@
 name: ring
-binary: ring
+binary: ring-kde
 packages:
   - libpulse-dev
   - libsamplerate0-dev
@@ -26,7 +26,7 @@ packages:
   - libjsoncpp-dev
   - libva-dev
 frameworks:
-  build_kf5: false
+  build_kf5: true
   frameworks:
     - extra-cmake-modules
     - kcoreaddons

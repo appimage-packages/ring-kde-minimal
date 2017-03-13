@@ -42,6 +42,14 @@ make install
 else
 	error_exit "$LINENO: An error has occurred.. Aborting."
 fi
+
+git clone git://anongit.kde.org/ring-kde
+cd ring-kde
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/opt/usr -DCMAKE_BUILD_TYPE=Release
+make
+make install
 function error_exit
 {
 	echo "$1" 1>&2
