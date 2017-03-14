@@ -110,7 +110,7 @@ strip -g $(find . -type f -exec) || true
 find . -type f -exec file {} \; | grep "not stripped"
 #Add back libkrb5
 cp /usr/lib/x86_64-linux-gnu/libkrb5* ./lib/
-get_desktopintegration <%= name %>
+get_desktopintegration <%= binary %>
 cd /app/src
 git clone git://anongit.kde.org/scratch/brauch/appimage-exec-wrapper
 cd /app/src/appimage-exec-wrapper/
