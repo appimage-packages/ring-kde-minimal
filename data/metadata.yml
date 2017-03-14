@@ -1,5 +1,5 @@
 name: ring
-binary: ring-kde
+binary: ring-lrc
 packages:
   - libpulse-dev
   - libsamplerate0-dev
@@ -65,10 +65,6 @@ frameworks:
     - breeze-icons
     - kinit
     - knotifyconfig
-    - kitemmodels
-    - akonadi
-    - akonadicontact
-    - kcontacts
 type: git
 url: https://gerrit-ring.savoirfairelinux.com/ring-daemon
 buildsystem: custom
