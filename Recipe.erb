@@ -51,11 +51,12 @@ rsync -aruxv --progress /opt/etc/ ./etc/
 rsync -aruxv --progress /opt/usr/qml/ ./qml/
 rsync -aruxv --progress /opt/usr/resources/ ./usr/bin/
 rsync -aruxv --progress /opt/usr/translations/ ./usr/bin/
+rsync -aruxv --progress /opt/usr/lib/ring/ ./usr/lib/
 cp /usr/lib/x86_64-linux-gnu/pulseaudio/*.so* ./usr/lib/
 
 cp /opt/usr/bin/gst* ./usr/bin/
 cp /opt/usr/bin/k* ./usr/bin/
-cp /opt/usr/bin/ring ./usr/bin/
+mv /opt/usr/bin/dbus ./usr/bin/
 mkdir ./lib
 rm -rfv /opt/usr/lib/gstreamer-1.0/include
 cp /opt/usr/lib/gstreamer-1.0/* ./lib/
@@ -140,7 +141,6 @@ export GST_PLUGIN_PATH=\$HERE/lib
 export GST_PLUGIN_SCANNER=\$HERE/bin
 export QT_STYLE_OVERRIDE=
 
-<%= name %> $@
 <%= binary %> $@
 EOF
 chmod +x AppRun
