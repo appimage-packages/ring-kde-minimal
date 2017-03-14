@@ -65,6 +65,7 @@ frameworks:
     - breeze-icons
     - kinit
     - knotifyconfig
+    - kitemmodels
     - akonadi
     - akonadicontact
     - kcontacts
