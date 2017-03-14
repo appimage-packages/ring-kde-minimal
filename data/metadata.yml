@@ -65,6 +65,9 @@ frameworks:
     - breeze-icons
     - kinit
     - knotifyconfig
+    - akonadi
+    - akonadicontact
+    - kcontacts
 type: git
 url: https://gerrit-ring.savoirfairelinux.com/ring-daemon
 buildsystem: custom
