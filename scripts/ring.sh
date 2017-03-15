@@ -14,7 +14,7 @@ if ../bootstrap --prefix=/opt/usr --enable-nettle --enable-gnutls --enable-x264 
 make .nettle .gnutls .x264 .ffmpeg
 
 make
-make install
+
 # That's all !
 else
 	error_exit "$LINENO: An error has occurred.. Aborting."
@@ -22,7 +22,7 @@ fi
 
 cd ../../
 if ./autogen.sh; then
-./configure --prefix=/opt/usr
+./configure --prefix=/opt/usr --without-dbus
 make
 make install
 
