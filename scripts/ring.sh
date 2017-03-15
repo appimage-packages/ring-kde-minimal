@@ -30,8 +30,7 @@ else
 fi
 cd ../../
 LIBRINGLIENT=`pwd`/ring-lrc
-RING=`pwd`/ring-daemon
-git clone https://gerrit-ring.savoirfairelinux.com/ring-daemon
+RING=/app/src/ring
 git clone https://gerrit-ring.savoirfairelinux.com/ring-lrc
 cd $LIBRINGLIENT
 mkdir build
@@ -43,13 +42,19 @@ else
 	error_exit "$LINENO: An error has occurred.. Aborting."
 fi
 
-git clone git://anongit.kde.org/ring-kde
-cd ring-kde
+git clone https://gerrit-ring.savoirfairelinux.com/ring-client-gnome
 mkdir build
 cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=/opt/usr -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_INSTALL_PREFIX=/opt/usr
 make
-make install
+sudo make install
+# git clone git://anongit.kde.org/ring-kde
+# cd ring-kde
+# mkdir build
+# cd build
+# cmake .. -DCMAKE_INSTALL_PREFIX=/opt/usr -DCMAKE_BUILD_TYPE=Release
+# make
+# make install
 function error_exit
 {
 	echo "$1" 1>&2

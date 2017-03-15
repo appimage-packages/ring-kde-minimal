@@ -1,5 +1,5 @@
 name: ring
-binary: ring-kde
+binary: ring-client-gnome
 packages:
   - libpulse-dev
   - libsamplerate0-dev
@@ -25,8 +25,13 @@ packages:
   - libgnutls-dev
   - libjsoncpp-dev
   - libva-dev
+  - libgtk-3-0
+  - libclutter-gtk-1.0-0
+  - gnome-icon-theme-symbolic
+  - libebook-1.2-14
+  - libnotify4
 frameworks:
-  build_kf5: true
+  build_kf5: false
   frameworks:
     - extra-cmake-modules
     - kcoreaddons
