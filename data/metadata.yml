@@ -1,5 +1,5 @@
 name: ring
-binary: ring-client-gnome
+binary: ring-kde
 packages:
   - libpulse-dev
   - libsamplerate0-dev

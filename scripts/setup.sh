@@ -21,7 +21,7 @@ export PATH=/opt/usr/bin:/home/jenkins/.rbenv/bin:/home/jenkins/.rbenv/shims:$PA
 export WORKSPACE=`pwd`
 echo $WORKSPACE
 
-add-apt-repository ppa:gnome3-team/gnome3-staging
+add-apt-repository -y ppa:gnome3-team/gnome3-staging
 apt-get update
 
 cd /in/ && rspec appimage-template/spec/recipe_rspec.rb --fail-fast
