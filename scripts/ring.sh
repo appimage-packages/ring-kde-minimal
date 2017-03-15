@@ -35,7 +35,7 @@ git clone https://gerrit-ring.savoirfairelinux.com/ring-lrc
 cd $LIBRINGLIENT
 mkdir build
 cd build
-if cmake .. -DRING_BUILD_DIR=$RING/src -DCMAKE_INSTALL_PREFIX=/opt/usr; then
+if cmake .. -DCMAKE_INSTALL_PREFIX=/opt/usr; then
 make -j8
 make install
 else
