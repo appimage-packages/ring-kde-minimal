@@ -26,6 +26,7 @@ packages:
   - libjsoncpp-dev
   - libva-dev
   - libgtk-3-0
+  - libgtk-3-dev
   - libclutter-gtk-1.0-0
   - gnome-icon-theme-symbolic
   - libebook-1.2-14
