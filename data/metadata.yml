@@ -32,7 +32,7 @@ packages:
   - libebook-1.2-14
   - libnotify4
 frameworks:
-  build_kf5: false
+  build_kf5: true
   frameworks:
     - extra-cmake-modules
     - kcoreaddons
