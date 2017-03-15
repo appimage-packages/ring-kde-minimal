@@ -43,6 +43,7 @@ else
 fi
 
 git clone https://gerrit-ring.savoirfairelinux.com/ring-client-gnome
+cd ring-client-gnome
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/opt/usr
