@@ -22,7 +22,7 @@ fi
 
 cd ../../
 if ./autogen.sh; then
-./configure --prefix=/opt/usr --without-dbus
+./configure --prefix=/opt/usr
 make
 make install
 
