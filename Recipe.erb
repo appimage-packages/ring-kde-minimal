@@ -142,8 +142,10 @@ export KF5_LIBEXEC_DIR=\$HERE/usr/bin
 export GST_PLUGIN_PATH=\$HERE/lib
 export GST_PLUGIN_SCANNER=\$HERE/bin
 export QT_STYLE_OVERRIDE=
-
+dring &
+PID=$!
 <%= binary %> $@
+kill $PID
 EOF
 chmod +x AppRun
 mv <%= binary %> ./usr/bin/
